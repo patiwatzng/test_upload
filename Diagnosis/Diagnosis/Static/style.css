@@ -1,0 +1,52 @@
+
+.suffix-word-text{
+    text-align: center;
+}
+.text-bottom{
+    color: red;
+}
+.disease-box{
+    text-align: center; 
+}
+.box-question{
+    outline: auto;
+    margin-top: 50;
+}
+.box-question-slot{
+    margin-bottom: 50;
+    text-align: center;
+    height: 400px;
+}
+.Logo-top{
+    margin-top: 110px;
+}
+.close-line{
+    border-style: inset;
+    background-color: black;
+    height:1px
+}
+
+.top_display{
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    outline: auto;
+    outline-color: blue;
+}
+.des-layout{
+    display: flex;
+}
+.description{
+    text-align: center;
+    align-self: center;
+    outline: auto;
+    width: 500px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.return-button{
+    text-align: center;
+    margin-top: 50;
+}

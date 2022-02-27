@@ -1,0 +1,69 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h2 class="mt-5">แบบสอบถามอาการ</h2>
+
+    <div class="box-question">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="Logo-top">{{Question.Symptom}}</h3>
+            <a href="{% url 'muscle-page' NextSequence 1  %}"><button class="btn btn-success ml-4 mt-4" value="1" name="question_1" id="question">ใช่</button></a>
+            <a href="{% url 'muscle-page' NextSequence 0  %}"><button class="btn btn-danger ml-4 mt-4" value="0" name="question_1" id="question">ไม่</button></a>
+        </div>
+        <input type="hidden" id="sequence" name="sequence" value="1">
+    </div>
+    <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1 mb-5">กลับหน้าหลัก</button></a>
+
+</div>
+
+
+{% endblock %}
+
+{% comment %} <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">มีอาการวิงเวียนศีรษะ - ศรีษะตื้อ</h3>
+            <input type="radio" class="ml-4" id="question_1" name="question_1" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_1" name="question_1" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">รู้สึกโครงเครงโหวง ๆ</h3>
+            <input type="radio" class="ml-4" id="question_2" name="question_2" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_2" name="question_2" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">หน้ามืด ตาลาย</h3>
+            <input type="radio" class="ml-4" id="question_3" name="question_3" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_3" name="question_3" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">บ้านหมุน</h3>
+            <input type="radio" class="ml-4" id="question_4" name="question_4" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_4" name="question_4" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">คลื่นไส้</h3>
+            <input type="radio" class="ml-4" id="question_5" name="question_5" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_5" name="question_5" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">อาเจียน</h3>
+            <input type="radio" class="ml-4" id="question_6" name="question_6" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_6" name="question_6" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">เหงื่อออก</h3>
+            <input type="radio" class="ml-4" id="question_7" name="question_7" value="1" required>ใช่
+            <input type="radio" class="ml-3" id="question_7" name="question_7" value="0">ไม่
+        </div>
+        <hr class="close-line">
+        <div class="box-question-slot pt-1 pl-3">
+            <h3 class="">มือและเท้าเย็น</h3>
+            <input type="radio" class="ml-4" id="question_8" name="question_8" value="1" required>ใช่
+            <input type="radio" class="ml-3 mb-5" id="question_8" name="question_8" value="0">ไม่
+        </div> {% endcomment %}

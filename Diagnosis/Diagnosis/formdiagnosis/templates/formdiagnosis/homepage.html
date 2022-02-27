@@ -1,0 +1,15 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="suffix-box mt-5">
+        <h1 class="suffix-word-text">โปรแกรมการวินิจฉัย<h1>
+        <h2 class="suffix-word-text text-bottom">โปรเลือกโรคที่ต้องการวินิจฉัย</h2>
+    </div>
+    <div class="disease-box mt-5">
+        <a href="{% url 'colddig-page' 1 1  %}"><button type="button" class="btn btn-primary mr-1">ไข้หวัด</button></a>
+        <a href="{% url 'allergy-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">เวียนศีรษะ</button></a>
+        <a href="{% url 'muscle-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ปวดกล้ามเนื้อ</button></a>
+    </div>
+</div>
+{% endblock %}

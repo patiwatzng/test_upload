@@ -1,0 +1,27 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1>โอกาสที่คุณจะเป็นโรค ไข้หวัด</h1>
+        <h3 class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <h5>- กินยาพาราเซตามอลเพื่อลดไข้และอาหารปวดศรีษะ</h5>
+            <h5>- เช็ดตัว</h5>
+            <h5>- นอนพัก</h5>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p>หากภายใน 3 วันอาการยังไม่ดีขึ้น โปรดไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติม</p>
+            <h2>ยาที่แนะนำ</h2>
+            <h5>- พาราเซตามอล</h5>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}
